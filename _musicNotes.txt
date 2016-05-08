@@ -1,0 +1,4 @@
+Listing of all duplicated folders
+	~/scripts/music_listlower.sh |sort | uniq -c | sort -rn | awk '$1>1' | cut -d ' ' -f7 --complement 
+Remove all duplicate folders (moving data to other directory)
+	~/scripts/music_removeDupFolders.sh
